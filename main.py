@@ -6,11 +6,11 @@ def filemanager():
     return text
 
 
-def freqency(word):
+def frequency(word):
     text = filemanager()
     new_text = string.split(text)
     z = reduce(lambda x, y: x + y, [1 for something in new_text if something == word])
-    print z
+    return z
 
 
-freqency("apple")
+print frequency("the")
